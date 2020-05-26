@@ -1,8 +1,7 @@
 <template>
   <div>
     {{ message }}
-    <button class="btn" @click="handleClick"></button>
-    <button class="btn1" @click="onBtnClick"></button>
+    <el-button @click="handleClick"></el-button>
   </div>
 </template>
 <script>
@@ -15,7 +14,6 @@ export default {
   methods: {
     handleClick() {
       this.message = 'new name';
-      this.onBtnClick();
     },
 
     onBtnClick() {

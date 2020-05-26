@@ -13,5 +13,5 @@ module.exports = {
   },
   collectCoverage: true,
   // collectCoverageFrom: ['**/src/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
-  collectCoverageFrom: ['**/src/views/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
+  collectCoverageFrom: ['**/src/views/**.{js,vue}', '**/src/components/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
 };
