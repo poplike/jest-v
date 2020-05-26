@@ -1,6 +1,7 @@
 <template>
   <div>
     {{ message }}
+    <div>123</div>
     <el-button @click="handleClick"></el-button>
   </div>
 </template>

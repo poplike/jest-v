@@ -5,6 +5,10 @@ exports[`user 显示时snapshot测试 1`] = `
   
   name
   
+  <div>
+    123
+  </div>
+   
   <button
     class="el-button el-button--default"
     type="button"

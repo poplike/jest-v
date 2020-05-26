@@ -3,9 +3,8 @@
  * 挂载子组件-stubs
  * 测试el-button
  */
-import Vue from 'vue';
 
-import { mount, createLocalVue, createWrapper } from '@vue/test-utils';
+import { mount, createLocalVue } from '@vue/test-utils';
 import User from '@/views/user.vue';
 import ElementUI from 'element-ui';
 
@@ -17,10 +16,7 @@ describe('user', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = mount(User, {
-      localVue,
-      stubs: {
-        aab: `<div @click="onBtnClick"></div>`,
-      },
+      localVue
     });
   });
 
@@ -39,8 +35,8 @@ describe('user', () => {
   });
 
   it('onBtnClick', () => {
-    expect(wrapper.vm.message).toBe('new name');
-    // wrapper.find('')
+    wrapper.vm.onBtnClick()
+    expect(wrapper.vm.message).toBe('new name bn1')
   });
 
   it('显示时snapshot测试', () => {
