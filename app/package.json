@@ -1,0 +1,40 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest",
+    "debugger": "node --inspect-brk ./node_modules/jest/bin/jest --runInBand --no-cache --no-watchman"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@types/jest": "^25.2.3",
+    "@vue/test-utils": "^1.0.3",
+    "axios": "^0.19.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "element-ui": "^2.13.2",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.0.1",
+    "jest-diff": "^26.0.1",
+    "jsdom": "^16.2.2",
+    "jsdom-global": "^3.0.2",
+    "vue-jest": "^3.0.5",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "element-ui": "^2.13.2",
+    "vue": "^2.6.11"
+  }
+}
