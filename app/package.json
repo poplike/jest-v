@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "test:w": "jest --watch",
     "test": "jest",
     "debugger": "node --inspect-brk ./node_modules/jest/bin/jest --runInBand --no-cache --no-watchman"
   },
@@ -14,6 +15,8 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/vue": "^5.0.3",
     "@types/jest": "^25.2.3",
     "@vue/babel-preset-app": "^4.3.1",
     "@vue/test-utils": "^1.0.3",
@@ -26,6 +29,7 @@
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.0.1",
     "jest-diff": "^26.0.1",
+    "jest-watch-typeahead": "^0.6.0",
     "jsdom": "^16.2.2",
     "jsdom-global": "^3.0.2",
     "vue-jest": "^3.0.5",

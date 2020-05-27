@@ -16,7 +16,7 @@ describe('user', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = mount(User, {
-      localVue
+      localVue,
     });
   });
 
@@ -29,14 +29,19 @@ describe('user', () => {
   });
 
   it('handleClick', () => {
-    let btn = wrapper.find('.el-button');
-    btn.trigger('click');
+    // let btn = wrapper.find('.el-button');
+    // console.log(btn);
+    // btn.trigger('click');
+    // expect(wrapper.vm.handleClick()).toBeCalledTimes(1);
+    const drink = jest.fn();
+    wrapper.vm.handleClick(drink);
+    // expect(drink).toHaveBeenCalled();
     expect(wrapper.vm.message).toBe('new name');
   });
 
   it('onBtnClick', () => {
-    wrapper.vm.onBtnClick()
-    expect(wrapper.vm.message).toBe('new name bn1')
+    wrapper.vm.onBtnClick();
+    expect(wrapper.vm.message).toBe('new name bn1');
   });
 
   it('显示时snapshot测试', () => {

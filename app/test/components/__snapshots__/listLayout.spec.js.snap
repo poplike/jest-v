@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListLayout Snapshot 1`] = `
+<div>
+  <div
+    class="form-wrap"
+  >
+    <div
+      class="list-layout-header"
+    >
+      <el-form-stub
+        inline="true"
+        labelsuffix=""
+        labelwidth="100px"
+        model="[object Object]"
+        showmessage="true"
+        validateonrulechange="true"
+      >
+         
+        <el-form-item-stub
+          inlinemessage=""
+          showmessage="true"
+        >
+          <el-button-stub
+            icon=""
+            nativetype="button"
+            type="primary"
+          >
+            搜索
+          </el-button-stub>
+        </el-form-item-stub>
+      </el-form-stub>
+       
+      <!---->
+    </div>
+     
+    <hr
+      class="divider"
+    />
+  </div>
+   
+  <div
+    class="table-wrap"
+  />
+   
+  <div
+    class="row-flex"
+  >
+    <el-pagination-stub
+      background="true"
+      class="mart-15 text-right row-flex-eq"
+      currentpage="1"
+      layout="total, sizes, prev, pager, next, jumper"
+      pagercount="7"
+      pagesize="10"
+      pagesizes="10,20,30,40"
+      total="0"
+    />
+     
+  </div>
+</div>
+`;
