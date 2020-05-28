@@ -1,6 +1,6 @@
 import Event_View from '@/views/event_view';
 import { mount, createLocalVue } from '@vue/test-utils';
-import { render, fireEvent } from '@testing-library/vue';
+// import { render, fireEvent } from '@testing-library/vue';
 
 describe('event_view', () => {
   let wrapper;

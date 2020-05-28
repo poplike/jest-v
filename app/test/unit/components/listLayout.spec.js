@@ -1,3 +1,4 @@
+jest.mock('axios');
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 // import { render, fireEvent } from '@testing-library/vue'  UI 测试库
 import '@testing-library/jest-dom';
@@ -6,16 +7,23 @@ import ElementUI from 'element-ui';
 
 import axios from 'axios';
 
-jest.mock('axios');
 // 创建临时Vue实例，挂载组件中使用的插件
 const localVue = createLocalVue();
 localVue.use(ElementUI);
 
-it('axios_resp', () => {
-  return expect(axios.get()).resolves((res) => {
-    console.log(res);
-  });
-});
+// beforeEach(() => {
+//   jest.resetModules();
+//   jest.clearAllMocks();
+// });
+
+// it('axios_resp', () => {
+//   expect.assertions(2);
+//   return axios.get().then(res => {
+//     expect(res).toEqual({ aab: 123 })
+//   }).catch((err => {
+//     expect(err).toEqual('2')
+//   }))
+// });
 
 // localVue.prototype.$utils = {
 //   handleDate: (data) => {

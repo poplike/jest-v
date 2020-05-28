@@ -2,6 +2,7 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
+  // automock: true,
   moduleFileExtensions: ['js', 'json', 'vue'],
   transform: {
     '.*\\.(vue)$': 'vue-jest',
@@ -13,6 +14,6 @@ module.exports = {
   },
   collectCoverage: true,
   // collectCoverageFrom: ['**/src/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
-  collectCoverageFrom: ['**/src/views/**.{js,vue}', '**/src/components/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
+  collectCoverageFrom: ['**/src/views/**.{js,vue}', '**/src/request/**.{js,vue}', '**/src/components/**.{js,vue}', '!**/node_modules/**', '!**src/main.js**', '!**src/router.js**'],
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 };
