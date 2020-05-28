@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`props Snapshot 1`] = `
+<div>
+  <h1>
+    测试props
+  </h1>
+   
+  <p>
+    内容
+  </p>
+</div>
+`;
